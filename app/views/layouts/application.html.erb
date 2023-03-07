@@ -11,6 +11,13 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-light bg-light justify-content-between">
+      <%= link_to "Doug's Movie Lists", lists_path, style: 'color:grey; font-size: 20px; margin-left: 20px; text-decoration: none;'   %>
+        <form class="form-inline">
+          <%= link_to "My lists", lists_path, class: "btn btn-outline-primary text-nowrap"  %>
+          <%= link_to "New list", new_list_path, class: "btn btn-outline-primary text-nowrap"  %>
+        </form>
+    </nav>
     <%= yield %>
   </body>
 </html>
