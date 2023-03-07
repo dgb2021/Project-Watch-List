@@ -1,3 +1,7 @@
 <h1>Add a new list</h1>
-
-<%= link_to "home", lists_path  %>
+<div class="container">
+  <%= simple_form_for @list do |f| %>
+    <%= f.input :name %>
+    <%= f.button :submit %>
+  <% end %>
+</div>

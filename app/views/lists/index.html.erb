@@ -1,3 +1,8 @@
 <h1>Home</h1>
 <p>Find me in app/views/lists/index.html.erb</p>
 
+<%= @lists.each do |list| %>
+  <ul>
+     <%= link_to list.name, list_path(list) %>
+  </ul>
+<% end %>
