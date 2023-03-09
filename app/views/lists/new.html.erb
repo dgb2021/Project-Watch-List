@@ -1,11 +1,13 @@
-<h1>Add a new list</h1>
-<div class="container">
-  <%= simple_form_for @list do |f| %>
-    <%= f.input :name %>
-    <%= f.button :submit %>
-  <% end %>
+<div class="container px-lg-5">
+  <div class="row mx-lg-n5">
+    <div class="col py-3 px-lg-5 border bg-light">
+      <h3>Add a new list</h3>
+        <%= simple_form_for @list do |f| %>
+          <%= f.input :name %>
+          <%= f.button :submit %>
+        <% end %>
+      </div>
+    </div>
+  </div>
 </div>
-
-
-
 
